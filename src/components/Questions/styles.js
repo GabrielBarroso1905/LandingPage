@@ -78,7 +78,7 @@ export const ServiceCards2 = styled.div`
 export const ServiceCard2 = styled.div`
   ${({ theme,colorDark }) => css`
 
-    padding: 10px 40px 10px 10px;
+    padding: 10px 5px 10px 10px;
  
     background-color: ${colorDark ?  theme.colors.white : theme.colors.primaryColor  };
  
@@ -97,10 +97,11 @@ export const ServiceCard2 = styled.div`
 
 export const ServiceCard3 = styled.div`
   ${({ theme,colorDark }) => css`
-    padding: 10px 40px 10px 10px;
+    padding: 10px 5px 10px 10px;
     border-radius: 12px;
     background-color: ${colorDark ?  theme.colors.secondaryColor : theme.colors.secondaryColor };
     border: none;
+    
     transition: 0.1s all ease-in;
     @media ${theme.media.lteMedium} { 
     }
@@ -130,6 +131,7 @@ export const Text = styled.div`
   ${({ theme,colorDark}) => css`
     line-height: 16px;
     font-size: 15px;
+   
     color: ${colorDark ?  theme.colors.white : theme.colors.primaryColor };
   `}
 `;
