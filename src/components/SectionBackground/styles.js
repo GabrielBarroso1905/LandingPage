@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 const containerBackgroundActivate = (theme) => css`
   background: ${theme.colors.primaryColor};
   color: ${theme.colors.white};
+  
 `;
 
 export const Container = styled.div`
@@ -13,5 +14,6 @@ export const Container = styled.div`
     min-height: 100vh;
     display: flex;
     align-items: center;
+   
   `}
 `;
