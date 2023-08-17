@@ -1,5 +1,6 @@
 import { Base } from '../Base';
 import { GridImage } from '../../components/GridImage';
+import { Home1 } from '../../components/Home1';
 import { mockBase } from '../Base/mock';
 import { GridText } from '../../components/GridText';
 import gridMock from '../../components/GridText/mock';
@@ -52,10 +53,19 @@ export const Home = () => {
     ],
   };
 
+
   const args = {
     title: 'Grid two columns',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio magnam culpa eveniet doloribus harum? Ipsam, a necessitatibus? Sequi sunt accusantium quod, animi iure a, aliquid dolor ea vel magni dolore',
     srcImg: 'assets/images/javascript.svg',
+  };
+
+  
+  const args2= {
+    title: 'Como criar uma rotina de cuidados com a pele do rosto?',
+    text: `Os cuidados de hoje determinam como a nossa pele será no futuro.`,
+    srcImg: 'assets/images/1167bf91-96fd-4aeb-97d0-9f4f46120346.png',
+    fundo:'assets/images/fundo.png',
   };
 const contactData = {
   address: 'gabrielb_barroso',
@@ -101,7 +111,8 @@ const argsServices= {
   }
   return (
     <>
-      <Base {...mockBase} >
+        <Base {...mockBase} >
+          <Home1 {...args2}/>
         <GridTwoColumns {...args}  sectionId = 'target1'/>
         <GridContent {...argsGridContent} background sectionId = 'target2'/>
         <AboutUs data={contactData2} background={false} />

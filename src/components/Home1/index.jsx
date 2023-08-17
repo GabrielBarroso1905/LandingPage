@@ -6,8 +6,6 @@ import { TextComponent } from '../TextComponent';
 
 export const Home1 = ({title,text,srcImg,background = false,sectionId = '', fundo}) => {
   return (
-    <Styled.ContainerFundo>    
-      <Styled.Fundo src={fundo} alt={title} />  
       <SectionBackground2 background={background} sectionId={sectionId} fundo={fundo}>
       <Styled.Container background={background}>
 
@@ -26,9 +24,7 @@ export const Home1 = ({title,text,srcImg,background = false,sectionId = '', fund
         </Styled.ImageContainer>
        
       </Styled.Container>
-    </SectionBackground2 >
-   
-    </Styled.ContainerFundo>
+    </SectionBackground2 >   
 
   );
 };

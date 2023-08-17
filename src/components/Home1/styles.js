@@ -21,13 +21,7 @@ export const Container = styled.div`
   `}
 `;
 
-export const ContainerFundo = styled.div`
-  ${({ theme }) => css`
-  position: relative;
-  display: flex;
-  
-  `}
-`;
+
 
 export const TextContainer = styled.div`
   ${({ theme }) => css`
