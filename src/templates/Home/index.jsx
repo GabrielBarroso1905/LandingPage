@@ -14,6 +14,7 @@ import { AboutUs } from '../../components/AboutUs';
 import { Service } from '../../components/Service';
 import { ServiceV2 } from '../../components/ServiceV2';
 import { Questions } from '../../components/Questions';
+import { Questions2 } from '../../components/Questions2';
 ; // Substitua pelo caminho correto para o componente Contact
 
 
@@ -128,6 +129,7 @@ const argsServices= {
         <Depoimentos  background= {false} sectionId="target5" />
         <GridImage key={key}{...section} sectionId = 'target6' background/>
         <Questions {...argsQuestions}  sectionId= 'target7' />
+        <Questions2  sectionId= 'target7' />
         <Contact data={contactData} sectionId = 'target8' />
 
       </Base>
