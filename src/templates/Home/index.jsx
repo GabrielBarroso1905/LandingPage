@@ -1,6 +1,7 @@
 import { Base } from '../Base';
 import { GridImage } from '../../components/GridImage';
 import { Home1 } from '../../components/Home1';
+import { Home2 } from '../../components/Home2';
 import { mockBase } from '../Base/mock';
 import { GridText } from '../../components/GridText';
 import gridMock from '../../components/GridText/mock';
@@ -114,9 +115,10 @@ const argsServices= {
     <>
         <Base {...mockBase} >
           <Home1 {...args2}/>
+          <Home2 {...args2} />
+        <AboutUs data={contactData2} background={false} />
         <GridTwoColumns {...args}  sectionId = 'target1'/>
         <GridContent {...argsGridContent} background sectionId = 'target2'/>
-        <AboutUs data={contactData2} background={false} />
         <Service {...argsServices} background= {true} sectionId= {'seu-id-aqui'} />
         <GridText {...gridMock}   sectionId = 'target3'/>
         <GridVideo
