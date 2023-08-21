@@ -1,7 +1,7 @@
 import { Depoimentos } from '.';
 
 export default {
-  title: 'Depoimentos',
+  title: 'Text/Depoimentos',
   component: Depoimentos,
   args: {
     background: false,

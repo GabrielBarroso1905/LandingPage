@@ -1,7 +1,7 @@
 import { Questions2 } from '.';
 
 export default {
-  title: 'Questions2',
+  title: 'Text/Questions2',
   component: Questions2,
 };
 

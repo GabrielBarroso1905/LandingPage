@@ -2,7 +2,7 @@ import { GridVideo } from '.';
 
 
 export default {
-  title: 'GridVideo',
+  title: 'Midia/GridVideo',
   component: GridVideo,
 };
 

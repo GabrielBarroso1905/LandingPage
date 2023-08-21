@@ -15,5 +15,5 @@ export const mockBase = {
     link: '#',
     srcImg: 'assets/images/favicon.ico',
   },
-  footerHtml: '<p>Feito por Gabriel Barroso</p>',
+  footerHtml: '<p>©Gabriel Barroso 2023</p>',
 };

@@ -3,7 +3,7 @@ import { Home1 } from '.';
 import mock from './mock';
 
 export default {
-  title: 'Home1',
+  title: 'Homes/Home1',
   component: Home1,
   args: mock,
   argTypes: {

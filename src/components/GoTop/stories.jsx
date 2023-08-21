@@ -1,7 +1,7 @@
 import { GoTop } from '.';
 
 export default {
-  title: 'GoTop',
+  title: 'Ferramentas/GoTop',
   component: GoTop,
   args: {
     children: 'GoTop',

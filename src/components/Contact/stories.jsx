@@ -11,7 +11,7 @@ const contactData = {
 };
 
 export default {
-  title: 'Contact', // Nome do componente
+  title: 'Contato/Contact', // Nome do componente
   component: Contact, // O componente que será utilizado nos stories
   args: {
     data: contactData, // Passa os dados para o componente através dos argumentos

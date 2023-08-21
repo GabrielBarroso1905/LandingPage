@@ -3,7 +3,7 @@ import { GridImage } from '.';
 import mock from './mock';
 
 export default {
-  title: 'GridImage',
+  title: 'Midia/GridImage',
   component: GridImage,
   args: mock,
 };

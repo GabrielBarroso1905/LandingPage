@@ -1,7 +1,7 @@
 import { ServiceV2 } from '.';
 
 export default {
-  title: 'ServiceV2',
+  title: 'Services/ServiceV2',
   component: ServiceV2,
   args: {
     background: false,

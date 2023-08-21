@@ -1,7 +1,7 @@
 import { Heading } from '.';
 
 export default {
-  title: 'Heading',
+  title: 'Ferramentas/Heading',
   component: Heading,
   args: {
     children: 'O texto está escuro',

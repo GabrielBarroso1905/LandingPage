@@ -3,7 +3,7 @@ import { GridContent } from '.';
 import mock from './mock';
 
 export default {
-  title: 'GridContent',
+  title: 'Text/GridContent',
   component: GridContent,
   args: mock,
 };

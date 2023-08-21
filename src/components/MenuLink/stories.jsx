@@ -1,7 +1,7 @@
 import { MenuLink } from '.';
 
 export default {
-  title: 'MenuLink',
+  title: 'Ferramentas/MenuLink',
   component: MenuLink,
   args: {
     children: 'MenuLink',

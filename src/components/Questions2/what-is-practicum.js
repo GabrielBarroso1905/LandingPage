@@ -1,4 +1,4 @@
-import image from '../../images/practicum-logo.png';
+import image from './logo192.png';
 import { theme } from '../../styles/theme';
 
 const practicum = [

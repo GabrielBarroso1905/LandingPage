@@ -3,7 +3,7 @@ import { Menu } from '.';
 import linksMock from '../NavLinks/mock';
 
 export default {
-  title: 'Menu',
+  title: 'Ferramentas/Menu',
   component: Menu,
   args: {
     links: linksMock,

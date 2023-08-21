@@ -1,7 +1,7 @@
 import { Service } from '.';
 
 export default {
-  title: 'Service',
+  title: 'Services/Service',
   component: Service,
   args: {
     title: 'Título customizado', // Defina os valores desejados para title e description

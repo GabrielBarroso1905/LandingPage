@@ -1,7 +1,7 @@
 import { Questions } from '.';
 
 export default {
-  title: 'Questions',
+  title: 'Text/Questions',
   component: Questions,
   args: {
     title: 'Título customizado',

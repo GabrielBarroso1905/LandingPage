@@ -2,7 +2,7 @@ import { SectionBackground } from '.';
 import { SectionContainer } from '../SectionContainer';
 
 export default {
-  title: 'SectionBackground',
+  title: 'Ferramentas/SectionBackground',
   component: SectionBackground,
   args: {
     children: (
