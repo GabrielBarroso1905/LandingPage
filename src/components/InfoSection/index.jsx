@@ -3,21 +3,25 @@ import React from 'react';
 import InfoCard from './InfoCard';
 import { InfoCardOne, InfoCardTwo, InfoCardThree } from './data';
 import { InfoSectionContainer, InfoSectionWrapper, InfoHeading, InfoCopy, InfoCardsContainer } from './InfoSectionElements';
+import { SectionBackground } from '../SectionBackground';
+import { Heading } from '../Heading';
 
 
-export const InfoSection = () => {
+export const InfoSection = ({sectionId}) => {
     return (
-        <InfoSectionContainer >
+        <div id={sectionId}>
+        <SectionBackground>
             <InfoSectionWrapper>
-                <InfoHeading>Advanced Statistics</InfoHeading>
+                 <Heading>Advanced Statistics</Heading>
                 <InfoCopy>Track how your links are performing across the web with our advanced statistics dashboard.</InfoCopy>
                 <InfoCardsContainer>
-                <InfoCard {...InfoCardOne} />
+                     <InfoCard {...InfoCardOne} />
                     <InfoCard { ...InfoCardTwo }/>
                     <InfoCard { ...InfoCardThree }/>
                 </InfoCardsContainer>
             </InfoSectionWrapper>
-        </InfoSectionContainer>
+        </SectionBackground>
+        </div>
     );
 };
 

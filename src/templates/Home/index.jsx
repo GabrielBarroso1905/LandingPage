@@ -17,7 +17,7 @@ import { ServiceV2 } from '../../components/ServiceV2';
 import { Questions } from '../../components/Questions';
 import { Questions2 } from '../../components/Questions2';
 import { InfoSection } from '../../components/InfoSection';
-
+import { InfoSection2 } from '../../components/InfoSection2';
 ; // Substitua pelo caminho correto para o componente Contact
 
 
@@ -117,9 +117,10 @@ const argsServices= {
     <>
         <Base {...mockBase} >
           <Home1 {...args2}/>
-          <Home2 {...args2} />
+          <Home2 {...args2}  />
+        <InfoSection2 sectionId = 'target1' />
         <AboutUs data={contactData2} background={false} />
-        <GridTwoColumns {...args}  sectionId = 'target1'/>
+        <GridTwoColumns {...args}  />
         <GridContent {...argsGridContent} background sectionId = 'target2'/>
         <Service {...argsServices} background= {true} sectionId= {'seu-id-aqui'} />
         <GridText {...gridMock}   sectionId = 'target3'/>
@@ -134,8 +135,9 @@ const argsServices= {
         <GridImage key={key}{...section} sectionId = 'target6' background/>
         <Questions {...argsQuestions}  sectionId= 'target7' />
         <Questions2  sectionId= 'target7' />
+        <InfoSection sectionId = 'target1' />
         <Contact data={contactData} sectionId = 'target8' />
-        <InfoSection />
+        
       </Base>
     </>
   );

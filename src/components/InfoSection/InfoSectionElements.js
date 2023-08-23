@@ -34,7 +34,7 @@ export const InfoHeading = styled.h2`
 
 export const InfoCopy = styled.p`
     margin-bottom: 5.75rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.75rem;
     color: gray;
     @media screen and (min-width: 1024px) {
@@ -51,13 +51,13 @@ export const InfoCardsContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
     gap: 5.75rem;
-
     &::before {
         content: '';
         position: absolute;
         width: 0.5rem;
         height: 100%;
         left: 50%;
+        border-radius: 2000px;
         transform: translateX(-50%);
         background-color: #2bd0d0;
         
@@ -81,9 +81,10 @@ export const InfoCardsContainer = styled.div`
 export const InfoCardWrap = styled.div`
     position: relative;
     padding: 4.75rem 2rem 2.5rem;
-    background-color: #ffffff;
+    background-color: #e1dee1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-
+    border: 1px solid #ccc;
     @media screen and (min-width: 1024px) {
         height: max-content;
         text-align: left;
@@ -124,12 +125,12 @@ export const InfoIcon = styled.img`
 
 export const InfoCardHeading = styled.h3`
     margin-bottom: 0.75rem;
-    font-size: 1.375rem;
+    font-size: 1.5rem;
     line-height: 2rem;
     color: var(--text-dark);
 `;
 
 export const InfoCardCopy = styled.p`
-    font-size: 0.9375rem;
+    font-size: 1.2rem;
     line-height: 1.625rem;
 `;

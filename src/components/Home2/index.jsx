@@ -28,10 +28,10 @@ const testimonialsData = [
 
 ]
 
-export const Home2 = ({title,text,srcImg,background = false,sectionId = ''}) => {
+export const Home2 = ({title,text,srcImg,background = false,sectionId}) => {
   return (
     
-        <>
+        <div id={sectionId}>
         <Styled.IntroSection>
           <Styled.IntroOverlay>
           <Styled.IntroTextContainer>
@@ -46,40 +46,9 @@ export const Home2 = ({title,text,srcImg,background = false,sectionId = ''}) => 
           </Styled.IntroTextContainer>
           </Styled.IntroOverlay>
         </Styled.IntroSection>
-        
-        <Styled.div>
-          <Styled.IntroTextContainer2>
-          
-          <Styled.Titulo>
-          <h2>Features</h2>
-          <Styled.BlueBar/>
-          </Styled.Titulo>
-          <Styled.TestimonialContainer>
-          {testimonialsData.map((testimonial, index) => (
-            <Styled.Testimonial key={index}>
-              <div className="testimonial-image">
+ 
 
-              <Styled.ServiceCardIcon colorDark={!background}>
-                <Styled.IcoInsta colorDark={background}>
-                <i className= {`${testimonial.icon}`}/>
-                </Styled.IcoInsta>
-              </Styled.ServiceCardIcon>
-              </div>
-              <div className="testimonial-content">
-              
-              <div colorDark={background} className="testimonial-meta">{testimonial.name}</div>
-                <p>"{testimonial.text}"</p>
-              
-              </div>
-            </Styled.Testimonial>
-          ))}
-        </Styled.TestimonialContainer>
-       
-        </Styled.IntroTextContainer2>
-        </Styled.div>
-         
-
-        </>
+        </div>
        
  
   );

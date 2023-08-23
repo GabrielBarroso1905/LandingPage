@@ -2,7 +2,7 @@ import React from 'react';
 import { InfoSection } from '.';
 
 export default {
-  title: 'Components/InfoSection',
+  title: 'Services/InfoSection',
   component: InfoSection,
 };
 
