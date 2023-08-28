@@ -116,9 +116,9 @@ const argsServices= {
   return (
     <>
         <Base {...mockBase} >
-          <Home1 {...args2}/>
-          <Home2 {...args2}  />
-        <InfoSection2 sectionId = 'target1' />
+          {/* <Home1 {...args2}/> */}
+          {/* <Home2 {...args2}  /> */}
+        {/* <InfoSection2 sectionId = 'target1' /> */}
         <AboutUs data={contactData2} background={false} />
         <GridTwoColumns {...args}  />
         <GridContent {...argsGridContent} background sectionId = 'target2'/>
