@@ -18,6 +18,7 @@ import { Questions } from '../../components/Questions';
 import { Questions2 } from '../../components/Questions2';
 import { InfoSection } from '../../components/InfoSection';
 import { InfoSection2 } from '../../components/InfoSection2';
+import { Features } from '../../components/Features';
 ; // Substitua pelo caminho correto para o componente Contact
 
 
@@ -116,13 +117,16 @@ const argsServices= {
   return (
     <>
         <Base {...mockBase} >
-          {/* <Home1 {...args2}/> */}
-          {/* <Home2 {...args2}  /> */}
-        {/* <InfoSection2 sectionId = 'target1' /> */}
+        <Home1 {...args2} />
+        <GridTwoColumns {...args} background />
+        <Home2 {...args2}  />
+        <Features/>
+        <InfoSection2 sectionId = 'target1' />
         <AboutUs data={contactData2} background={false} />
-        <GridTwoColumns {...args}  />
         <GridContent {...argsGridContent} background sectionId = 'target2'/>
-        <Service {...argsServices} background= {true} sectionId= {'seu-id-aqui'} />
+        <InfoSection sectionId = 'target1' />
+       
+       
         <GridText {...gridMock}   sectionId = 'target3'/>
         <GridVideo
          const videoUrl = 'https://www.youtube.com/watch?v=HGTJBPNC-Gw'
@@ -130,12 +134,13 @@ const argsServices= {
          sectionId="target4" // Seu valor dependerá do uso específico da prop no componente SectionBackground
          background
         />
+         <Service {...argsServices} background= {false} sectionId= {'seu-id-aqui'} />
         <ServiceV2  background= {false} sectionId={"seu-id-aqui"} />
         <Depoimentos  background= {false} sectionId="target5" />
         <GridImage key={key}{...section} sectionId = 'target6' background/>
         <Questions {...argsQuestions}  sectionId= 'target7' />
         <Questions2  sectionId= 'target7' />
-        <InfoSection sectionId = 'target1' />
+ 
         <Contact data={contactData} sectionId = 'target8' />
         
       </Base>
