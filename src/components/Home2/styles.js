@@ -21,22 +21,6 @@ export const Container = styled.div`
 `;
 
 
-export const IntroSection = styled.section`
-    ${({ theme }) => css`
-  display: table;
-  width: 100%;
-  padding: 0;
-  background: url(../img/img2.jpg) center center no-repeat;
-  background-color: #e5e5e5;
-  background-size: cover;
-  /* @media ${theme.media.lteMedium} {
-    background-size: 700%;
-    margin-top: -150px;
-    } */
-
-    `}
-`;
-
 export const IntroOverlay = styled.div`
   background: rgba(0, 0, 0, 0.2);
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BannerSection } from '../../components/BannerSection';
-
-
+import { SectionBackground } from '../SectionBackground';
+import { Heading } from '../Heading';
 import {SectionTitle,
     SectionContainer,
     Line,
@@ -22,11 +22,12 @@ export const InfoSection2 = ({sectionId}) => {
     return (
 
       <div id={sectionId}>
-        <SectionWrapper>
+        
+        <SectionBackground>
       <SectionContainer>
         <Line/>
           <Titulo>
-          <h2>Features</h2>
+          <Heading>Features</Heading>
           <BlueBar/>
           </Titulo>
         {/* <SectionTitle>We're different</SectionTitle> */}
@@ -58,7 +59,7 @@ export const InfoSection2 = ({sectionId}) => {
         </CardContainer>
       </SectionContainer>
       <BannerSection />
-    </SectionWrapper>
+    </SectionBackground>
       
     
     </div>
