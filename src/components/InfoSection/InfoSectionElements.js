@@ -1,16 +1,14 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const InfoSectionContainer = styled.section`
+  ${({ theme }) => css`
     padding: 0 1.5rem 5rem;
-    background-color: #eff1f7;
-
-    @media screen and (min-width: 768px) {
+    background-color: ${theme.colors.primaryColor};
+    @media screen and (min-width: 1024px) {
         padding: 0 2.5rem 5rem;
     }
 
-    @media screen and (min-width: 1024px) {
-        padding: 0 2.5rem 7.5rem;
-    }
+`}
 `;
 
 export const InfoSectionWrapper = styled.div`
@@ -33,19 +31,22 @@ export const InfoHeading = styled.h2`
 `;
 
 export const InfoCopy = styled.p`
+ ${({ theme }) => css`
     margin-bottom: 5.75rem;
     font-size: 1.5rem;
     line-height: 1.75rem;
-    color: gray;
-    @media screen and (min-width: 1024px) {
+    color: ${theme.colors.primaryColor};
+    @media ${theme.media.lteMedium} {
         max-width: 34rem;
         margin: 0 auto 6.25rem;
         font-size: 1.125rem;
         line-height: 2rem;
     }
+    `}
 `;
 
 export const InfoCardsContainer = styled.div`
+ ${({ theme }) => css`
     position: relative;
     display: flex;
     flex-direction: column;
@@ -59,7 +60,7 @@ export const InfoCardsContainer = styled.div`
         left: 50%;
         border-radius: 2000px;
         transform: translateX(-50%);
-        background-color: #2bd0d0;
+        background-color: ${theme.colors.secondaryColor};
         
     }
 
@@ -76,12 +77,14 @@ export const InfoCardsContainer = styled.div`
             transform: translate(0);
         }
     }
+    `}
 `;
 
 export const InfoCardWrap = styled.div`
+ ${({ theme }) => css`
     position: relative;
     padding: 4.75rem 2rem 2.5rem;
-    background-color: #e1dee1;
+    background-color:${theme.colors.mediumGray};
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -97,10 +100,12 @@ export const InfoCardWrap = styled.div`
             top: 88px;
         }
     };
+    `}
 
 `;
 
 export const InfoIconWrap = styled.div`
+ ${({ theme }) => css`
     position: absolute;
     top: 0;
     left: 50%;
@@ -111,12 +116,13 @@ export const InfoIconWrap = styled.div`
     height: 5.5rem;
     width: 5.5rem;
     border-radius: 50%;
-    background-color: aqua;
+    background-color: ${theme.colors.secondaryColor};
 
     @media screen and (min-width: 1024px) {
         left: 2rem;
         transform: translateY(-50%);
     };
+    `}
 `;
 
 export const InfoIcon = styled.img`

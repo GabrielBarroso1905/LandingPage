@@ -9,7 +9,6 @@ import { SectionContainer } from '../SectionContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
-import { GridText } from '../GridText';
 export const AboutUs = ({ data, sectionId, background }) => { 
  
   return (
