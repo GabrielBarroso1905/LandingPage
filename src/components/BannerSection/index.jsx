@@ -8,7 +8,7 @@ import {
   BannerWrapper,
   DesktopPattern,
   MobilePattern,
-  } from './InfoSectionElements';
+  } from './styles';
 
    
 export const BannerSection = ({sectionId}) => {
