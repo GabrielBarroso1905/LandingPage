@@ -7,7 +7,7 @@ import { ReactComponent as PatternMobile } from "./images/pattern-banner-mobile.
 export const BannerWrapper = styled.section`
   margin-top: 8rem;
   @media ${"2000px"} {
-    margin: 6rem 10rem;
+    /* margin: 6rem 10rem; */
   }
 `;
 
