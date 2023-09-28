@@ -96,6 +96,7 @@ const argsServices= {
     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     Why: ['Razão 1', 'Razão 2', 'Razão 3'],
     Why2: ['Razão 4', 'Razão 5', 'Razão 6'],
+
     
   };
 
@@ -122,7 +123,7 @@ const argsServices= {
         <Home2 {...args2}  />
         <Features/>
         <InfoSection2 sectionId = 'target1' />
-        <AboutUs data={contactData2} background={false} />
+        <AboutUs background={true} />
         <GridContent {...argsGridContent} background sectionId = 'target2'/>
         <InfoSection sectionId = 'target1' />
        
