@@ -8,6 +8,8 @@ import { Heading } from '../Heading';
 import { SectionContainer } from '../SectionContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { theme } from '../../styles/theme';
+
 import data from './mock'; 
 
 export const AboutUs = ({sectionId, background }) => { 
@@ -21,11 +23,11 @@ export const AboutUs = ({sectionId, background }) => {
 
     <Styled.About>
              <SectionContainer>
-             <Heading size="medium" colorDark={!background} uppercase as="h2">
+             <Heading size="medium" colorDark={!background} color={theme.colors.secondaryColor} uppercase as="h2">
             About Us
             </Heading>
           <Styled.P>{data.paragraph ? data.paragraph : 'loading...'}</Styled.P>
-          <Heading size="small" colorDark={!background} uppercase as="h2">Why Choose Us? </Heading>        
+          <Heading size="small" colorDark={!background} uppercase as="h2">Why Choose Us?</Heading>        
                 <Styled.List >
                   <ul>
                     {data.Why
@@ -35,6 +37,11 @@ export const AboutUs = ({sectionId, background }) => {
                   <ul>
                     {data.Why2
                       ? data.Why2.map((d, i) => <li key={`${d}-${i}`}> <FontAwesomeIcon icon={faCheck}/>{d}</li>)
+                      : 'loading'}
+                  </ul>
+                  <ul>
+                    {data.Why3
+                      ? data.Why.map((d, i) => <li key={`${d}-${i}`}> <FontAwesomeIcon icon={faCheck}/>{d}</li>)
                       : 'loading'}
                   </ul>
               </Styled.List>      

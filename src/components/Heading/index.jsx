@@ -7,6 +7,7 @@ export const Heading = ({
   as = 'h1',
   size = 'huge',
   uppercase = false,
+  color = '',
 }) => {
   return (
     <Styled.Title
@@ -14,6 +15,7 @@ export const Heading = ({
       as={as}
       size={size}
       uppercase={uppercase}
+      color={color}
     >
       {children}
     </Styled.Title>
@@ -21,6 +23,7 @@ export const Heading = ({
 };
 
 Heading.propTypes = {
+  color: P.string,
   children: P.node.isRequired,
   colorDark: P.bool,
   as: P.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),

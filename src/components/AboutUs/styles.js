@@ -29,7 +29,7 @@ export const P = styled.p`
   ${({ theme }) => css`
     line-height: 1.5;
     font-size: 20px;
-    color: ${theme.colors.text};
+    /* color: ${theme.colors.primaryColor}; */
   `}
 `;
 
