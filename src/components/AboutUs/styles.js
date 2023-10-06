@@ -6,7 +6,7 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    gap: ${theme.spacings.medium}; /* Reduzimos o espaçamento entre os elementos */
+    gap: ${theme.spacings.small}; /* Reduzimos o espaçamento entre os elementos */
 
     @media ${theme.media.lteMedium} {
       grid-template-columns: 1fr;
@@ -21,7 +21,7 @@ export const Container = styled.div`
 
 export const About = styled.div`
   ${({ theme }) => css`
-    /* margin-bottom: ${theme.spacings.xhuge}; */
+    margin-bottom: ${theme.spacings.xsmall};
   `}
 `;
 
@@ -29,7 +29,7 @@ export const P = styled.p`
   ${({ theme }) => css`
     line-height: 1.5;
     font-size: 20px;
-    /* color: ${theme.colors.primaryColor}; */
+    color: ${theme.colors.primaryColor};
   `}
 `;
 
@@ -48,10 +48,6 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
   ${({ theme }) => css`
     max-width: 100%;
-
-
-  
-
   `}
 `;
 
@@ -70,6 +66,7 @@ export const List = styled.div`
       li {
         margin-bottom: ${theme.spacings.small}; /* Use medidas flexíveis */
         padding: 0;
+        display: flex;
         white-space: nowrap; /* Impede que o texto seja quebrado */
                 /* Estilização do ícone */
           svg {

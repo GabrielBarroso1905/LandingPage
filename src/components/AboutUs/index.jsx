@@ -9,6 +9,7 @@ import { SectionContainer } from '../SectionContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { theme } from '../../styles/theme';
+import { TextComponent } from '../TextComponent';
 
 import data from './mock'; 
 
@@ -23,25 +24,25 @@ export const AboutUs = ({sectionId, background }) => {
 
     <Styled.About>
              <SectionContainer>
-             <Heading size="medium" colorDark={!background} color={theme.colors.secondaryColor} uppercase as="h2">
+             <Heading size='medium' color={theme.colors.secondaryColor} uppercase as="h2">
             About Us
             </Heading>
-          <Styled.P>{data.paragraph ? data.paragraph : 'loading...'}</Styled.P>
+          <TextComponent size='small'>{data.paragraph ? data.paragraph : 'loading...'}</TextComponent>
           <Heading size="small" colorDark={!background} uppercase as="h2">Why Choose Us?</Heading>        
                 <Styled.List >
                   <ul>
                     {data.Why
-                      ? data.Why.map((d, i) => <li key={`${d}-${i}`}> <FontAwesomeIcon icon={faCheck}/>{d} </li>)
+                      ? data.Why.map((d, i) => <li key={`${d}-${i}`}> <FontAwesomeIcon icon={faCheck}/><TextComponent size='small'>{d}</TextComponent></li>)
                       : 'loading'}
                   </ul>
                   <ul>
                     {data.Why2
-                      ? data.Why2.map((d, i) => <li key={`${d}-${i}`}> <FontAwesomeIcon icon={faCheck}/>{d}</li>)
+                      ? data.Why2.map((d, i) => <li key={`${d}-${i}`}> <FontAwesomeIcon icon={faCheck}/><TextComponent size='small'>{d}</TextComponent></li>)
                       : 'loading'}
                   </ul>
                   <ul>
                     {data.Why3
-                      ? data.Why.map((d, i) => <li key={`${d}-${i}`}> <FontAwesomeIcon icon={faCheck}/>{d}</li>)
+                      ? data.Why3.map((d, i) => <li key={`${d}-${i}`}> <FontAwesomeIcon icon={faCheck}/><TextComponent size='small'>{d}</TextComponent></li>)
                       : 'loading'}
                   </ul>
               </Styled.List>      

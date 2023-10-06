@@ -45,7 +45,7 @@ export const BannerTitle = styled.h3`
   max-width: 45%;
   line-height: 1;
   margin-left: 4rem;
-  z-index: 9;
+  z-index: 4;
   @media ${theme.media.lteMedium} {
     max-width: 100%;
     text-align: center;
@@ -61,7 +61,7 @@ export const Btn = styled.button`
   /* Estilos de fundo e cor do texto */
   background-color: #2d2640;
   color: ${colorDark ?  theme.colors.primaryColor : theme.colors.white };
-  z-index: 8;
+  z-index: 4;
   /* Margem e padding */
   
   margin: 10px 0;
@@ -88,7 +88,7 @@ ${({ theme }) => css`
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 5;
+  z-index: 3;
 
   @media ${theme.media.lteMedium} {
     display: none;
