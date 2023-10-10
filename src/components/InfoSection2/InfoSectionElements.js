@@ -43,6 +43,9 @@ export const CardContainer = styled.div`
 export const Card = styled.div`
   width: 350px;
   margin-right: 1rem;
+  //
+  text-align: center;
+  //
   @media ${"905px"} {
     margin: 0;
     padding-bottom: 2rem;

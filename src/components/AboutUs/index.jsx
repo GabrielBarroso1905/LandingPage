@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { theme } from '../../styles/theme';
 import { TextComponent } from '../TextComponent';
-
 import data from './mock'; 
 
 export const AboutUs = ({sectionId, background }) => { 
