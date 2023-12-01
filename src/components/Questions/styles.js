@@ -1,12 +1,10 @@
 import styled, { css } from 'styled-components';
-import { Heading } from '../Heading';
 
 export const Container = styled.div`
   ${({ theme }) => css`
     margin-bottom: ${theme.spacings.xsmall};
-
     text-align: center;
-    /* background-color: aliceblue; */
+    /* Adicione o background-color se desejar */
   `}
 `;
 export const Container2 = styled.div`
@@ -22,6 +20,7 @@ export const Container2 = styled.div`
 `
 
 export const ContainerCards = styled.div`
+  ${({ theme }) => css`
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Alinha os itens à esquerda */
@@ -35,7 +34,18 @@ export const ContainerCards = styled.div`
     margin-left: auto; /* Cola o item à direita */
     margin-right: 0; /* Remove a margem direita */
   }
-
+  @media ${theme.media.lteMedium} {
+    & > *:nth-child(odd) {
+    margin-left: ; /* Remove a margem esquerda dos itens ímpares (alinhados à esquerda) */
+    margin-right: auto; /* Cola o item ímpar à esquerda */
+  }
+  & > * {
+    width: 80%; /* Define a largura dos itens para 50% */
+    margin-left: auto; /* Cola o item à direita */
+    margin-right: 0; /* Remove a margem direita */
+    margin-top: 10px;
+  }
+  `}
 `;
 
 
@@ -61,13 +71,11 @@ export const ServiceCards = styled.div`
   `}
 `;
 export const ServiceCards2 = styled.div`
-  ${({ theme }) => css`
-  
-        
-    padding: 10px;
+  ${({ theme }) => css`      
+    padding: 5px;
     @media ${theme.media.lteMedium} {
      display: inline;/* Adiciona a propriedade flex-wrap para que os itens sejam distribuídos em uma única coluna quando a tela for pequena */
-     font-style: italic;
+
        padding: 0px;
     }
   `}
@@ -98,7 +106,7 @@ export const ServiceCard2 = styled.div`
 export const ServiceCard3 = styled.div`
   ${({ theme,colorDark }) => css`
     padding: 10px 5px 10px 10px;
-    border-radius: 12px;
+    border-radius: 8px;
     background-color: ${colorDark ?  theme.colors.secondaryColor : theme.colors.secondaryColor };
     border: none;
     
@@ -114,12 +122,13 @@ export const ServiceCard3 = styled.div`
 export const ServiceCard = styled.div`
   ${({ theme,colorDark }) => css`
   
-    padding: 10px 40px 10px 10px;
-    border-radius: 12px;
+    padding: 10px 5px 10px 10px;
+    border-radius: 8px;
     background-color: ${colorDark ?  theme.colors.primaryColor : theme.colors.white };
     border: none;
     transition: 0.1s all ease-in;
     @media ${theme.media.lteMedium} { 
+      padding: 5px 5px 10px 10px;
     }
 
   `} > * {
@@ -129,9 +138,20 @@ export const ServiceCard = styled.div`
 `;
 export const Text = styled.div`
   ${({ theme,colorDark}) => css`
-    line-height: 16px;
-    font-size: 15px;
-   
+    font-size: ${theme.font.sizes.xsmall};
+
+    font-family: ${ theme.font.family.default};
     color: ${colorDark ?  theme.colors.white : theme.colors.primaryColor };
+  `}
+`;
+export const BlueBar = styled.div`
+  ${({ theme }) => css`
+    width: 50px; /* Largura da BlueBar, ajuste conforme necessário */
+    height: 5px; /* Altura da BlueBar, ajuste conforme necessário */
+    background: linear-gradient(to right, #E0C783 0%, #FAB700 100%);
+    margin-top: ${theme.spacings.xxsmall}; /* Espaçamento entre o texto e a BlueBar, ajuste conforme necessário */
+    margin-left: auto;
+    margin-right: auto;
+    
   `}
 `;

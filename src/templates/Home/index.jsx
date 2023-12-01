@@ -4,10 +4,8 @@ import { Home1 } from '../../components/Home1';
 import { Home2 } from '../../components/Home2';
 import { mockBase } from '../Base/mock';
 import { GridText } from '../../components/GridText';
-import gridMock from '../../components/GridText/mock';
 import { GridTwoColumns } from '../../components/GridTwoColumns';
 import { GridContent } from '../../components/GridContent';
-import mock from '../../components/GridContent/mock'; 
 import { GridVideo } from '../../components/GridVideo';
 import { Contact } from '../../components/Contact';
 import { Depoimentos } from '../../components/Depoimentos';
@@ -19,8 +17,6 @@ import { Questions2 } from '../../components/Questions2';
 import { InfoSection } from '../../components/InfoSection';
 import { InfoSection2 } from '../../components/InfoSection2';
 import { Features } from '../../components/Features';
-; // Substitua pelo caminho correto para o componente Contact
-
 
 export const Home = () => {
 
@@ -86,11 +82,7 @@ const argsServices= {
   description: 'Descrição customizada', // Defina os valores desejados para title e description
 
 }
-  const argsGridContent = {
-    title: mock.title,
-    html: mock.html,
-  
-  };
+
   const key = 'chave-unica'; // Defina uma chave única para o componente GridImage
 
 
@@ -118,11 +110,11 @@ const argsServices= {
         <Features/>
         <InfoSection2 sectionId = 'target1' />
         <AboutUs background={true} />
-        <GridContent {...argsGridContent} background sectionId = 'target2'/>
+        <GridContent background sectionId = 'target2'/>
         <InfoSection sectionId = 'target1' />
        
        
-        <GridText {...gridMock}   sectionId = 'target3'/>
+        <GridText sectionId = 'target3'/>
         <GridVideo
          const videoUrl = 'https://www.youtube.com/watch?v=HGTJBPNC-Gw'
          text="Texto que será exibido em cima do vídeo"

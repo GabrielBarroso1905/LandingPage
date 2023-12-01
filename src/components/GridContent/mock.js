@@ -1,5 +1,6 @@
+// eslint-disable-next-line
 export default {
-  title: 'Título Qualquer aceita html',
+  title: 'Título aceita html',
   html: `
   <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.<p>
   <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.<p>

@@ -3,11 +3,8 @@ import * as Styled from './styles';
 import { SectionBackground } from '../SectionBackground';
 import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
-
+import mock from './mock';
 export const GridText = ({
-  title,
-  description,
-  grid,
   background = false,
   sectionId = '',
 }) => {
@@ -15,11 +12,11 @@ export const GridText = ({
     <SectionBackground background={background} sectionId={sectionId}>
       <Styled.Container>
         <Heading size="huge" uppercase colorDark={!background} as="h2">
-          {title}
+          {mock.title}
         </Heading>
-        <TextComponent>{description}</TextComponent>
+        <TextComponent>{mock.description}</TextComponent>
         <Styled.Grid>
-          {grid.map((el) => (
+          {mock.grid.map((el) => (
             <Styled.GridElement key={el.title}>
               <Heading size="medium" colorDark={!background} as="h3">
                 {el.title}
