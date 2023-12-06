@@ -15,7 +15,7 @@ export const InfoSection = ({sectionId}) => {
                  <Heading>Advanced Statistics</Heading>
                 <InfoCopy>Track how your links are performing across the web with our advanced statistics dashboard.</InfoCopy>
                 <InfoCardsContainer>
-                     <InfoCard {...InfoCardOne} />
+                    <InfoCard {...InfoCardOne} />
                     <InfoCard { ...InfoCardTwo }/>
                     <InfoCard { ...InfoCardThree }/>
                 </InfoCardsContainer>

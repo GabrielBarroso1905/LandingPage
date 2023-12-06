@@ -139,8 +139,8 @@ export const ServiceCard = styled.div`
 export const Text = styled.div`
   ${({ theme,colorDark}) => css`
     font-size: ${theme.font.sizes.xsmall};
-
-    font-family: ${ theme.font.family.default};
+    font-family: ${ theme.font.family.default};   
+    line-height: 25px;
     color: ${colorDark ?  theme.colors.white : theme.colors.primaryColor };
   `}
 `;

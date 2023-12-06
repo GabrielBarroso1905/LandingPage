@@ -23,12 +23,12 @@ export const Inner = styled.div`
 `;
 
 export const Bubble = styled.div`
-  padding: 30px 30px;
+  padding: 0px 30px;
   background-color: ${({ backgroundColor }) => backgroundColor};
   border-radius: ${({ borderRadius }) => borderRadius};
   max-width: 840px;
   @media (max-width: 600px) {
-    padding: 14px 14px;
+    padding: 1px 10px;
     text-align: center;
   }
 `;
@@ -63,7 +63,6 @@ export const Title = styled.h2`
 
 export const Image = styled.img`
   height: 48px;
-  width: 48px;
   margin-right: 34px;
   margin-bottom: -40px;
   z-index: 5;
@@ -81,7 +80,18 @@ export const Image = styled.img`
 
 export const Item = styled.div`
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: black;
 `;
 
+export const BlueBar = styled.div`
+  ${({ theme }) => css`
+    width: 50px; /* Largura da BlueBar, ajuste conforme necessário */
+    height: 5px; /* Altura da BlueBar, ajuste conforme necessário */
+    background: linear-gradient(to right, #E0C783 0%, #FAB700 100%);
+    margin-top: ${theme.spacings.xxsmall}; /* Espaçamento entre o texto e a BlueBar, ajuste conforme necessário */
+    margin-left: auto;
+    margin-right: auto;
+    
+  `}
+`;
