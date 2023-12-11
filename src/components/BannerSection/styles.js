@@ -1,8 +1,7 @@
 import {styled,css} from "styled-components";
 // import { Button } from "../../styles/Button";
 // import { device } from "../../styles/Breakpoints";
-import { ReactComponent as PatternDesktop } from "./images/pattern-banner-desktop.svg";
-import { ReactComponent as PatternMobile } from "./images/pattern-banner-mobile.svg";
+
 
 export const BannerWrapper = styled.section`
   ${({ theme }) => css`
@@ -15,7 +14,7 @@ export const BannerWrapper = styled.section`
 `;
 export const BannerContainer = styled.div`
   ${({ theme }) => css`
-  background-color: #2d2640;
+  background: linear-gradient(to right, ${theme.colors.secondaryColor} 10%, ${theme.colors.secondaryGradienteColor} 100%);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,15 +22,11 @@ export const BannerContainer = styled.div`
   margin: auto;
   /* max-width: 1440px; */
   position: relative;
-  height: 25.2rem;;
+  /* height: 25.2rem; */
   @media ${theme.media.lteMedium} {
     flex-direction: column;
     text-align: center;
-    /* margin: 8rem 2rem; */
     padding: 4rem 2rem;
-    height: 60%;
-    width: 100%;
-
   }
   `}
 `;
@@ -40,12 +35,12 @@ export const BannerTitle = styled.h3`
   ${({ theme }) => css`
   font-family: "DM Serif Display", serif;
   font-size: clamp(5rem, 4vw, 8.1rem);
-  color: #fafafa;
+  color: ${theme.colors.white};
   font-weight: 400;
-  max-width: 45%;
+  max-width: 50%;
   line-height: 1;
   margin-left: 4rem;
-  z-index: 4;
+
   @media ${theme.media.lteMedium} {
     max-width: 100%;
     text-align: center;
@@ -59,7 +54,7 @@ export const Btn = styled.button`
  ${({ theme,colorDark }) => css`
  
   /* Estilos de fundo e cor do texto */
-  background-color: #2d2640;
+  background-color: ${theme.colors.secondaryColor};
   color: ${colorDark ?  theme.colors.primaryColor : theme.colors.white };
   z-index: 4;
   /* Margem e padding */
@@ -83,27 +78,4 @@ export const Btn = styled.button`
  `}
 `;
 
-export const DesktopPattern = styled(PatternDesktop)`
-${({ theme }) => css`
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 3;
 
-  @media ${theme.media.lteMedium} {
-    display: none;
-  }
-`}
-`;
-
-export const MobilePattern = styled(PatternMobile)`
-${({ theme }) => css`
-  display: none;
-  @media ${theme.media.lteMedium} {
-    display: inline;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-`}
-`;

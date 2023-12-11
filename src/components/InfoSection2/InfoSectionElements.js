@@ -7,7 +7,7 @@ export const SectionWrapper = styled.section`
 
 export const SectionContainer = styled.div`
  ${({ theme }) => css` 
- color: ${theme.colors.black};
+ color: ${theme.colors.sec};
   display: flex;
   flex-direction: column;
   max-width: 1440px;
@@ -53,10 +53,13 @@ export const Card = styled.div`
 `;
 
 export const CardTitle = styled.h3`
+  ${({ theme }) => css`
+    color: ${theme.colors.secondaryColor};
     font-size: 30px;
     font-family: "DM Serif Display", serif;
-    font-weight: 550;
+    font-weight: bold;
     padding: rem 0rem;
+    `}
 `;
 
 export const CardBody = styled.p`
@@ -89,8 +92,11 @@ export const Titulo = styled.div`
   `}
 `;
 export const BlueBar = styled.div`
+  ${({ theme }) => css`
   width: 50px; /* Largura da barra */
   height: 4px; /* Altura da barra */
-  background: linear-gradient(to right, #9c83e0 0%, #593dad 100%);
+  background: linear-gradient(to right, ${theme.colors.secondaryColor} 10%, ${theme.colors.secondaryGradienteColor} 100%);
+ 
   margin-top: 3px; /* Espaçamento entre a barra e o texto */
-`;
+  `}
+ `;

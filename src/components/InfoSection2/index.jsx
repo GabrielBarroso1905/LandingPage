@@ -2,14 +2,15 @@ import React from 'react';
 import { BannerSection } from '../../components/BannerSection';
 import { SectionBackground } from '../SectionBackground';
 import { Heading } from '../Heading';
-import {SectionTitle,
+
+import {
     SectionContainer,
     Line,
     CardContainer,
     Card,
     CardTitle,
     CardBody,
-    SectionWrapper,
+
     Titulo,
     BlueBar,
    } from './InfoSectionElements';
@@ -18,16 +19,12 @@ import {SectionTitle,
     import { ReactComponent as PeopleIcon } from "./images/icon-people-first.svg";
     
    
-export const InfoSection2 = ({sectionId}) => {
+export const InfoSection2 = ({sectionId,background}) => {
     return (
-
-      <div id={sectionId}>
-        
-        <SectionBackground>
+    <SectionBackground background={background} sectionId={sectionId}>
       <SectionContainer>
-        <Line/>
           <Titulo>
-          <Heading>Features</Heading>
+          <Heading  colorDark={!background}>Features</Heading>
           <BlueBar/>
           </Titulo>
         {/* <SectionTitle>We're different</SectionTitle> */}
@@ -61,8 +58,7 @@ export const InfoSection2 = ({sectionId}) => {
       <BannerSection />
     </SectionBackground>
       
-    
-    </div>
+
     
     );
 };

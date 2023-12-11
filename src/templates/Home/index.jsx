@@ -108,7 +108,7 @@ const argsServices= {
         <GridTwoColumns {...args} background />
         <Home2 {...args2}  />
         <Features/>
-        <InfoSection2 sectionId = 'target1' />
+        <InfoSection2 sectionId = 'target1' background />
         <AboutUs background={true} />
         <GridContent background sectionId = 'target2'/>
         <InfoSection sectionId = 'target1' />

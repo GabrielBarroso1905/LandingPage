@@ -6,4 +6,4 @@ export default {
   component: InfoSection2,
 };
 
-export const Default = () => <InfoSection2 />;
+export const Default = () => <InfoSection2 background={false} sectionId={"seu-id"}/>;

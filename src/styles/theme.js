@@ -2,6 +2,7 @@ export const theme = {
   colors: {
     primaryColor: '#000000',
     secondaryColor: '#FF8800',
+    secondaryGradienteColor: '#FF4800',
     tertiaryColor: '#FA0000',
     white: '#FFFFFF',
     mediumGray: '#BEBEBE',
@@ -10,6 +11,7 @@ export const theme = {
     family: {
       default: "'Open Sans', sans-serif",
       secondary: "'Montserrat', sans-serif",
+      tertiary: "'DM Serif Display', serif;"
     },
     sizes: {
       xxsmall: '1.2rem',

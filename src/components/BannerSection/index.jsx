@@ -1,29 +1,24 @@
 import React from 'react';
-
-
 import {
   BannerTitle,
   Btn,
   BannerContainer,
   BannerWrapper,
-  DesktopPattern,
-  MobilePattern,
-  } from './styles';
 
+  } from './styles';
+  import data from './mock'; 
    
-export const BannerSection = ({sectionId}) => {
+export const BannerSection = () => {
     return (
 
-      <div id={sectionId}>
-       <BannerWrapper>
+ 
+      <BannerWrapper>
       <BannerContainer>
-        <BannerTitle>Find out more about how we work</BannerTitle>
-        <Btn>How We Work</Btn>
-        <DesktopPattern />
-        <MobilePattern />
+        <BannerTitle>{data.title}</BannerTitle>
+        <Btn>{data.buttonText}</Btn>
       </BannerContainer>
     </BannerWrapper>
-    </div>
+ 
     
     );
 };
